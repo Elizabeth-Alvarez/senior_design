@@ -1,0 +1,56 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:src="@drawable/fb_security" 
+        android:scaleType="fitStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"> 
+    </ImageView>
+    
+      <TextView 
+        android:id="@+id/TextView01"
+		android:layout_width="wrap_content"
+		android:layout_height="100sp"
+		android:textSize="20sp"
+		></TextView> 
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+		android:layout_height="80sp"
+		android:inputType="textPassword"
+		android:layout_below="@id/TextView01"
+		android:hint="Please Proceed" >
+		<requestFocus/>
+	</EditText>    
+	
+    <ListView 
+        android:id="@+id/listView1"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="20sp">
+        
+    </ListView>
+	
+	<Button
+        android:id="@+id/continueButton"
+        android:layout_height="50sp"
+        android:layout_marginTop="80sp"
+        android:text="Save and Continue" 
+        android:background="@color/darkBlue"
+        android:textColor="@color/white"
+        /> 
+
+
+</TableLayout>
